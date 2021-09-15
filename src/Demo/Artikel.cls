@@ -8,6 +8,8 @@ Property Artikelname As %String;
 /// Artikelnummer
 Property Artikelnummer As %String;
 
+property VK as %Numeric;
+
 Index ArtikelnummerIndex On Artikelnummer [ Unique ];
 
 Storage Default
