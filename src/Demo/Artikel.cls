@@ -1,5 +1,5 @@
 /// Artikelklasse
-Class Demo.Artikel Extends %Persistent
+Class Demo.Artikel Extends (%Persistent, %Populate)
 {
 
 /// Artikelname
@@ -8,7 +8,7 @@ Property Artikelname As %String;
 /// Artikelnummer
 Property Artikelnummer As %String;
 
-property VK as %Numeric;
+Property VK As %Numeric;
 
 Index ArtikelnummerIndex On Artikelnummer [ Unique ];
 
@@ -23,6 +23,9 @@ Storage Default
 </Value>
 <Value name="3">
 <Value>Artikelnummer</Value>
+</Value>
+<Value name="4">
+<Value>VK</Value>
 </Value>
 </Data>
 <DataLocation>^Demo.ArtikelD</DataLocation>
